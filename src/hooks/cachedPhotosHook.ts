@@ -99,10 +99,13 @@ const useCachedRecentPhotos = () => {
 
       if (items.length === 0) hasMoreRef.current = false;
 
-      const updated = [...photos, ...items];
-      prevIdsRef.current = updated.map(p => p.id).join(',');
-      setPhotos(updated);
-      await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+      // Merge and remove duplicates by id
+      const merged = [...photos, ...items];
+      const unique = Array.from(new Map(merged.map(p => [p.id, p])).values());
+
+      prevIdsRef.current = unique.map(p => p.id).join(',');
+      setPhotos(unique);
+      await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(unique));
     } catch (e: any) {
       setError(e.message);
     } finally {
