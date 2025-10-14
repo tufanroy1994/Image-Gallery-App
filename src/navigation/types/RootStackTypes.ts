@@ -7,6 +7,7 @@ export type RootStackParamList = {
 
 export type DrawerParamList = {
   Home: undefined;
+  Search: undefined;
 };
 
 export type RootRouteProps<

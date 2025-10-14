@@ -16,7 +16,6 @@ const HomeScreen = () => {
 
   const { photos, loading, error, loadMore, loadingMore } =
     useCachedRecentPhotos();
-  const [selected, setSelected] = useState<string | null>(null);
 
   return (
     <SafeAreaView style={styles.container}>

@@ -2441,6 +2441,8 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
+  - RNSnackbar (2.9.0):
+    - React-Core
   - RNWorklets (0.6.1):
     - boost
     - DoubleConversion
@@ -2619,6 +2621,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSnackbar (from `../node_modules/react-native-snackbar`)
   - RNWorklets (from `../node_modules/react-native-worklets`)
   - SocketRocket (~> 0.7.1)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -2788,6 +2791,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSnackbar:
+    :path: "../node_modules/react-native-snackbar"
   RNWorklets:
     :path: "../node_modules/react-native-worklets"
   Yoga:
@@ -2873,6 +2878,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: db29d3e7edf41a11d133cc3ffd4029762376ed1a
   RNReanimated: 955f1dab987d22aeca21e6f2c1a45919c51b0b6f
   RNScreens: 3fc29af06302e1f1c18a7829fe57cbc2c0259912
+  RNSnackbar: c1b235eb606b03938c693ce769ed3059c31dff9b
   RNWorklets: 7fb44cd32a491df4a4832cce2f3b0aaaf813956d
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageWebPCoder: 908b83b6adda48effe7667cd2b7f78c897e5111d
