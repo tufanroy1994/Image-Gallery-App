@@ -5,6 +5,14 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    marginTop: wp(3),
+    marginHorizontal: wp(2),
+    borderRadius: wp(2),
+    padding: wp(3),
+  },
   headerText: {
     fontSize: FontSizes.FONT_SIZE_20,
     fontWeight: 'bold',
