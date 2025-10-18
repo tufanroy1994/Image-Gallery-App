@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { WelcomeScreen } from '../screens';
 import { AppColors, navigationRef } from '../utils';
-import DrawerNavigation from './DrawerNavigation';
+import BottomTabNavigation from './BottomTabNavigation';
 import { RootStackParamList } from './types/RootStackTypes';
 
 const AppNavigation = () => {
@@ -30,7 +30,10 @@ const AppNavigation = () => {
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
-        <Stack.Screen name="DrawerNavigation" component={DrawerNavigation} />
+        <Stack.Screen
+          name="BottomTabNavigation"
+          component={BottomTabNavigation}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -10,7 +10,7 @@ const WelcomeScreen = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('DrawerNavigation');
+      navigation.navigate('BottomTabNavigation');
     }, 2000);
   }, [navigation]);
 

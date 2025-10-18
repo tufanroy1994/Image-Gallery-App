@@ -1,15 +1,19 @@
 import { useNavigation } from '@react-navigation/native';
 import { StackScreenProps } from '@react-navigation/stack';
 import {
+  BottomTabStackParamList,
   RootStackParamList,
   DrawerParamList,
 } from '../navigation/types/RootStackTypes';
 
 const useAppNavigation = (
-  screenName: keyof RootStackParamList | keyof DrawerParamList,
+  screenName:
+    | keyof RootStackParamList
+    | keyof BottomTabStackParamList
+    | keyof DrawerParamList,
 ) => {
   type Props = StackScreenProps<
-    RootStackParamList & DrawerParamList,
+    RootStackParamList & BottomTabStackParamList & DrawerParamList,
     typeof screenName
   >;
   type ScreenNavigationProp = Props['navigation'];

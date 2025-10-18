@@ -4,5 +4,7 @@ export const AppColors = {
   PRIMARY_TEXT: '#000000',
   RED_TEXT: '#FC0B03',
 
+  DISABLE_TAB_BACKGROUND: '#A8A5A5',
+
   TRANSPARENT: 'transparent',
 };
