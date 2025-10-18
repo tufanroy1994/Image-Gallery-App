@@ -13,7 +13,7 @@ const BottomTabNavigation = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
         tabBarHideOnKeyboard: true,
         tabBarStyle: {
           backgroundColor: AppColors.PRIMARY_BACKGROUND,
@@ -26,6 +26,7 @@ const BottomTabNavigation = () => {
         name="DrawerNavigation"
         component={DrawerNavigation}
         options={{
+          headerShown: false,
           tabBarLabel: ({ focused }) => (
             <Text
               style={{

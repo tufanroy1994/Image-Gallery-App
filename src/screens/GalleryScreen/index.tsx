@@ -5,8 +5,8 @@ import { styles } from './styles';
 
 const GalleryScreen = () => {
   return (
-    <View>
-      <Text>About Screen</Text>
+    <View style={[styles.container]}>
+      <Text style={[styles.text]}>Gallery Screen</Text>
     </View>
   );
 };
