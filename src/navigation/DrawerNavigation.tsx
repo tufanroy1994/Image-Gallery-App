@@ -2,12 +2,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import {
-  AboutScreen,
-  GalleryScreen,
-  HomeScreen,
-  ProfileScreen,
-} from '../screens';
+import { HomeScreen } from '../screens';
 import { AppColors } from '../utils';
 import { DrawerParamList } from './types/RootStackTypes';
 
